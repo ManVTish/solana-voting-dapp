@@ -1,0 +1,1 @@
+/home/manishroy/solana-foundation/solana-bootcamp/voting-app/anchor/target/sbpf-solana-solana/release/libvoting.rlib: /home/manishroy/solana-foundation/solana-bootcamp/voting-app/anchor/programs/voting/src/lib.rs
