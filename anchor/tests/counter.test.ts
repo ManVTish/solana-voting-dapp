@@ -5,22 +5,23 @@ import { Keypair, PublicKey } from '@solana/web3.js'
 import { Voting } from '../target/types/voting'
 const IDL = require("../target/idl/voting.json");
 
-const votingAddress = new PublicKey("FqzkXZdwYjurnUKetJCAvaUw5WAqbwzU6gZEwydeEfqS");
+const votingAddress = new PublicKey("z6Uw5iAzPGjNqXeyDPHUHJJevYAobz6yviPcdqED32L");
 
 describe('Voting', () => {
   // Configure the client to use the local cluster.
   let context;
   let provider;
-  let votingProgram;
+  anchor.setProvider(anchor.AnchorProvider.env());
+  let votingProgram = anchor.workspace.Voting as Program<Voting>;
 
   beforeAll(async() => {
-    context = await startAnchor("", [{name: "voting", programId: votingAddress}], []);
+    /*context = await startAnchor("", [{name: "voting", programId: votingAddress}], []);
     provider = new BankrunProvider(context);
 
     votingProgram = new Program<Voting>(
       IDL,
       provider,
-    );
+    );*/
   });
 
   it('Initialize Polling', async () => {

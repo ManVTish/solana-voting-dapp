@@ -2,7 +2,12 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("FqzkXZdwYjurnUKetJCAvaUw5WAqbwzU6gZEwydeEfqS");
+//declare_id!("FqzkXZdwYjurnUKetJCAvaUw5WAqbwzU6gZEwydeEfqS");
+declare_id!("z6Uw5iAzPGjNqXeyDPHUHJJevYAobz6yviPcdqED32L");
+
+// blink created address: FKkh7jRunkpngWWHbJAJXN9Bzyod2p6DESuqnBcRXupZ
+
+// solana-keygen new -o /home/manishroy/.config/solana/id.json = 6jP3m2drnuT843chmYtZF1aPWCDNPxYcF7dLp4Nbf8cT
 
 #[program]
 pub mod voting {
